@@ -515,7 +515,7 @@ impl RequestClassifier for SmartLocalClassifier {
 
         // 5. Code Understanding
         // "Explain why this function returns the old value, not the incremented value."
-        if q.contains("explain why this function") || q.contains("explain why") || q.contains("how does this code") || q.contains("walk through this code") {
+        if q.contains("explain why this function") || q.contains("explain why") || q.contains("explain how") || q.contains("how does this code") || q.contains("walk through") {
             let complexity = if ctx.contains("fn next") || ctx.contains("let old") {
                 2
             } else {
